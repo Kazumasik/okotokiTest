@@ -1,0 +1,114 @@
+.container {
+    position: relative;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: var(--textColorDimmed);
+}
+
+.buttonActive {
+    box-shadow: 0 0 0 3px var(--borderColor);
+}
+
+.buttonIcon,
+.inputIcon {
+    margin-right: 8px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px 22px;
+    border-bottom-width: 1px;
+    border-color: var(--borderColor);
+}
+
+.input {
+    background-color: transparent;
+    flex: 1;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputIcon {
+    color: var(--mutedColor);
+}
+
+.inputWrapper:focus-within .inputIcon {
+    color: var(--textColor);
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    padding: 8px 10px;
+    background: var(--bgColor);
+}
+
+.tab {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.tab:hover {
+    background-color: var(--textColorDimmed);
+}
+
+.tab svg {
+    margin-right: 10px;
+}
+
+.tabActive {
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    position: absolute;
+    top: 0;
+    height: 42px;
+    color: var(--textColor);
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+  
+.item a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+.item:hover {
+    background-color: var(--textColorDimmed);
+}
+  
+.itemButton {
+    margin-right: 10px;
+}
